@@ -171,3 +171,4 @@ R_code/r_data/*
 *.Rproj
 
 R_code/.Rhistory
+.Rproj.user
