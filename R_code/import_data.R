@@ -9,14 +9,18 @@ library(plyr)
 # import ratings
 ratings_data <- read.csv(file=paste(getwd(),'/raw_data/ratings.csv',sep=""),header=TRUE)
 
-rating_summary <- ddply(ratings_data,.(film_id),summarise,N=length(rewatchability_rating))
-
-# save binaries:
-save(ratings_data,file=paste(getwd(),'/r_data/ratings.RData',sep=""))
+ratings_summary <- ddply(ratings_data,.(film_id),summarise,N=length(rewatchability_rating),quality=mean(quality_rating),rewatch=mean(rewatchability_rating))
 
 #-------
 # import films
 films_data <- read.csv(file=paste(getwd(),'/raw_data/films.csv',sep=""),header=TRUE)
+
+# add film names to ratings summary frame:
+temp <- subset(films_data,select=c('film_id','title'))
+ratings_summary <- merge(ratings_summary,temp,by='film_id')
+
+# order by most rated:
+ratings_summary <- ratings_summary[order(-ratings_summary$N, -ratings_summary$quality, -ratings_summary$rewatch),]
 
 #-------
 # import users
@@ -26,5 +30,7 @@ users_data <- read.csv(file=paste(getwd(),'/raw_data/users.csv',sep=""),header=T
 # import friendships
 friendships_data <- read.csv(file=paste(getwd(),'/raw_data/friendships.csv',sep=""),header=TRUE)
 
-
+#-------
+# save binaries:
+save(ratings_summary,file=paste(getwd(),'/r_data/ratings_summary.RData',sep=""))
 
