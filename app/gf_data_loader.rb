@@ -14,6 +14,7 @@ class GfDataLoader
   end
 
   def self.load_from_file(file, struct)
+    puts "Loading #{struct.to_s}s"
     File.open(file, 'r') { |input|
       input.readline
       input.readlines.map { |line|

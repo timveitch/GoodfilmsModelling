@@ -4,16 +4,39 @@
     <list default="true" id="5e905333-1f66-4bb9-9736-61d203ec1937" name="Default" comment="" />
     <ignored path="GoodfilmsModelling.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363606848998" ignored="false" />
-    <file path="/gf_data_loader.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363612176456" ignored="false" />
+    <file path="/Dummy.txt" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363687460387" ignored="false" />
+    <file path="/gf_data_loader.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363693641452" ignored="false" />
     <file path="/tc_gf_data_loader.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363612085156" ignored="false" />
     <file path="/run_unit_tests.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363602298391" ignored="false" />
-    <file path="/New Job (2).rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363607474907" ignored="false" />
-    <file path="/gf_data_structures.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363609156641" ignored="false" />
+    <file path="/New Job (2).rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363687050449" ignored="false" />
+    <file path="/gf_data_structures.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363692764947" ignored="false" />
     <file path="/gf_data_catalogue.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363603862883" ignored="false" />
     <file path="/tc_gf_data_structures.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363609234665" ignored="false" />
-    <file path="/temp.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363608395308" ignored="false" />
-    <file path="/gf_data_set.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363609468618" ignored="false" />
+    <file path="/temp.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363691558042" ignored="false" />
+    <file path="/gf_data_set.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363693473916" ignored="false" />
+    <file path="/a.dummy" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363647037188" ignored="false" />
+    <file path="D:/BDK/bedrock/app/utils/import/counts/zenith_counts_importer.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363649965667" ignored="false" />
+    <file path="/zenith_counts_importer.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363649692231" ignored="false" />
+    <file path="D:/BDK/bedrock/app/ghts/ghts_database_reader.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363681469203" ignored="false" />
+    <file path="/ghts_database_reader.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363681442027" ignored="false" />
+    <file path="D:/BDK/bedrock/app/ghts/ghts_data_set.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363681594840" ignored="false" />
+    <file path="/ghts_data_set.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363681590756" ignored="false" />
+    <file path="D:/BDK/bedrock/spec/ghts/views/tc_ghts_database_reader.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363681668085" ignored="false" />
+    <file path="/tc_ghts_database_reader.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363679760529" ignored="false" />
+    <file path="D:/BDK/bedrock/app/ghts/ghts_constants.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363675084505" ignored="false" />
+    <file path="/ghts_constants.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363675081125" ignored="false" />
+    <file path="D:/BDK/bedrock/app/ghts/ghts_data_structs.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363675869356" ignored="false" />
+    <file path="/ghts_data_structs.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363675868505" ignored="false" />
+    <file path="D:/BDK/bedrock/app/ghts/import/ghts_database_writer.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363680650770" ignored="false" />
+    <file path="/ghts_database_writer.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363676708143" ignored="false" />
+    <file path="D:/BDK/bedrock/spec/ghts/views/tc_ghts_data_set.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363681307996" ignored="false" />
+    <file path="D:/BDK/bedrock/spec/ghts/views/ghts_data_test_utils.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363681621706" ignored="false" />
+    <file path="/tc_ghts_data_set.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363681297214" ignored="false" />
+    <file path="/ghts_data_test_utils.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363681618682" ignored="false" />
+    <file path="/divisive_films_validator.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363693785745" ignored="false" />
+    <file path="/tc_gf_data_set.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363689160407" ignored="false" />
+    <file path="/tc_divisive_films_validator.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363692055123" ignored="false" />
+    <file path="/run_divisive_films_validator.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363693608978" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,19 +53,37 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="gf_data_loader.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/gf_data_loader.rb">
+      <file leaf-file-name="divisive_films_validator.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/divisiveness/divisive_films_validator.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="50" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0">
+            <state line="26" column="0" selection-start="924" selection-end="924" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gf_data_set.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/gf_data_set.rb">
+      <file leaf-file-name="tc_divisive_films_validator.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/divisiveness/tc_divisive_films_validator.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="5" selection-start="236" selection-end="236" vertical-scroll-proportion="0.25432527">
+            <state line="48" column="0" selection-start="1139" selection-end="1139" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="run_divisive_films_validator.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/divisiveness/run_divisive_films_validator.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="8" selection-start="474" selection-end="474" vertical-scroll-proportion="0.39965397">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gf_data_loader.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/gf_data_loader.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="33" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -51,7 +92,25 @@
       <file leaf-file-name="tc_gf_data_loader.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/tc_gf_data_loader.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="0" selection-start="1455" selection-end="1455" vertical-scroll-proportion="0.0">
+            <state line="23" column="25" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gf_data_set.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/gf_data_set.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="27" selection-start="941" selection-end="941" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tc_gf_data_set.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/tc_gf_data_set.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="0" selection-start="1155" selection-end="1155" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -60,16 +119,7 @@
       <file leaf-file-name="gf_data_structures.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/gf_data_structures.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="663" selection-end="663" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tc_gf_data_structures.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/tc_gf_data_structures.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0">
+            <state line="32" column="18" selection-start="854" selection-end="854" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -79,33 +129,6 @@
         <entry file="file://$PROJECT_DIR$/app/gf_data_catalogue.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="4" column="57" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testcase.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/BDK/OT/Ruby/lib/ruby/1.8/test/unit/testcase.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="run_unit_tests.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/run_unit_tests.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="11" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="command_line_test_runner.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/BDK/bedrock/app/utils/spec/command_line_test_runner.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="9" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -131,12 +154,16 @@
       <list>
         <option value="$PROJECT_DIR$/spec/run_unit_tests.rb" />
         <option value="$PROJECT_DIR$/app/gf_data_catalogue.rb" />
-        <option value="D:/OT/SEQ_1068_v1.0_SBR_OT60/jobs/New Job (2).rb" />
         <option value="$PROJECT_DIR$/spec/tc_gf_data_structures.rb" />
-        <option value="$PROJECT_DIR$/app/gf_data_set.rb" />
-        <option value="$PROJECT_DIR$/app/gf_data_structures.rb" />
         <option value="$PROJECT_DIR$/spec/tc_gf_data_loader.rb" />
+        <option value="D:/OT/SEQ_1068_v1.0_SBR_OT60/jobs/New Job (2).rb" />
+        <option value="$PROJECT_DIR$/spec/tc_gf_data_set.rb" />
+        <option value="$PROJECT_DIR$/spec/divisiveness/tc_divisive_films_validator.rb" />
+        <option value="$PROJECT_DIR$/app/gf_data_structures.rb" />
+        <option value="$PROJECT_DIR$/app/gf_data_set.rb" />
         <option value="$PROJECT_DIR$/app/gf_data_loader.rb" />
+        <option value="$PROJECT_DIR$/app/divisiveness/divisive_films_validator.rb" />
+        <option value="$PROJECT_DIR$/app/divisiveness/run_divisive_films_validator.rb" />
       </list>
     </option>
   </component>
@@ -172,7 +199,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -215,43 +241,63 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="divisiveness" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoodfilmsModelling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoodfilmsModelling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoodfilmsModelling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoodfilmsModelling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="divisiveness" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.sourceCode.General" />
     <property name="recentsLimit" value="5" />
-    <property name="restartRequiresConfirmation" value="true" />
+    <property name="options.lastSelected" value="preferences.sourceCode.General" />
     <property name="last_opened_file_path" value="D:/BDK/bedrock" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RunManager" selected="Ruby.tc_gf_data_loader">
-    <configuration default="false" name="run_unit_tests" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
-      <module name="GoodfilmsModelling" />
-      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/spec" />
-      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/run_unit_tests.rb" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Ruby.run_divisive_films_validator">
     <configuration default="false" name="tc_gf_data_structures" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="GoodfilmsModelling" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-Id:/goodfilms/code/goodfilmsmodelling -e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -287,6 +333,60 @@
       <RunnerSettings RunnerId="RubyDebugRunner" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="tc_gf_data_set" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="GoodfilmsModelling" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-Id:/goodfilms/code/goodfilmsmodelling -e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/spec" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/tc_gf_data_set.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="tc_divisive_films_validator" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="GoodfilmsModelling" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-Id:/goodfilms/code/goodfilmsmodelling -e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/spec/divisiveness" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/divisiveness/tc_divisive_films_validator.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="run_divisive_films_validator" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="GoodfilmsModelling" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-Id:/goodfilms/code/goodfilmsmodelling -e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/app/divisiveness" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/app/divisiveness/run_divisive_films_validator.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
@@ -370,17 +470,21 @@
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method />
     </configuration>
-    <list size="4">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Ruby.RunUnitTests" />
-      <item index="1" class="java.lang.String" itemvalue="Ruby.run_unit_tests" />
-      <item index="2" class="java.lang.String" itemvalue="Ruby.tc_gf_data_structures" />
-      <item index="3" class="java.lang.String" itemvalue="Ruby.tc_gf_data_loader" />
+      <item index="1" class="java.lang.String" itemvalue="Ruby.tc_gf_data_structures" />
+      <item index="2" class="java.lang.String" itemvalue="Ruby.tc_gf_data_loader" />
+      <item index="3" class="java.lang.String" itemvalue="Ruby.tc_gf_data_set" />
+      <item index="4" class="java.lang.String" itemvalue="Ruby.tc_divisive_films_validator" />
+      <item index="5" class="java.lang.String" itemvalue="Ruby.run_divisive_films_validator" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Ruby.tc_gf_data_loader" />
-        <item index="1" class="java.lang.String" itemvalue="Ruby.tc_gf_data_structures" />
-        <item index="2" class="java.lang.String" itemvalue="Ruby.run_unit_tests" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Ruby.run_divisive_films_validator" />
+        <item index="1" class="java.lang.String" itemvalue="Ruby.tc_divisive_films_validator" />
+        <item index="2" class="java.lang.String" itemvalue="Ruby.tc_gf_data_structures" />
+        <item index="3" class="java.lang.String" itemvalue="Ruby.tc_gf_data_set" />
+        <item index="4" class="java.lang.String" itemvalue="Ruby.tc_gf_data_loader" />
       </list>
     </recent_temporary>
   </component>
@@ -420,11 +524,11 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2598684" sideWeight="0.67060083" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2631579" sideWeight="0.67060083" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39914164" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32939914" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -497,34 +601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/gf_data_loader.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/tc_gf_data_loader.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/run_unit_tests.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/BDK/bedrock/app/utils/spec/command_line_test_runner.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="9" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/BDK/bedrock/app/utils/spec/command_line_test_runner.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="9" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
@@ -551,13 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/OT/SEQ_1068_v1.0_SBR_OT60/jobs/New Job (2).rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="58" selection-end="58" vertical-scroll-proportion="0.1816609">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/gf_data_catalogue.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="57" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
@@ -565,37 +634,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/gf_data_structures.rb">
+    <entry file="file://D:/OT/SEQ_1068_v1.0_SBR_OT60/jobs/New Job (2).rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="663" selection-end="663" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/tc_gf_data_structures.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/tc_gf_data_loader.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="0" selection-start="1455" selection-end="1455" vertical-scroll-proportion="0.0">
+        <state line="23" column="25" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/gf_data_loader.rb">
+    <entry file="file://$PROJECT_DIR$/spec/tc_gf_data_set.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="50" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0">
+        <state line="43" column="0" selection-start="1155" selection-end="1155" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/gf_data_structures.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="18" selection-start="854" selection-end="854" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/divisiveness/tc_divisive_films_validator.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="0" selection-start="1139" selection-end="1139" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/gf_data_set.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="5" selection-start="236" selection-end="236" vertical-scroll-proportion="0.25432527">
+        <state line="26" column="27" selection-start="941" selection-end="941" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/gf_data_loader.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="33" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/divisiveness/divisive_films_validator.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="924" selection-end="924" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/divisiveness/run_divisive_films_validator.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="8" selection-start="474" selection-end="474" vertical-scroll-proportion="0.39965397">
           <folding />
         </state>
       </provider>
