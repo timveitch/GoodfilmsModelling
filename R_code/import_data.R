@@ -32,5 +32,5 @@ friendships_data <- read.csv(file=paste(getwd(),'/raw_data/friendships.csv',sep=
 
 #-------
 # save binaries:
-save(ratings_summary,file=paste(getwd(),'/r_data/ratings_summary.RData',sep=""))
+save(ratings_summary,ratings_data,file=paste(getwd(),'/r_data/ratings_summary.RData',sep=""))
 
