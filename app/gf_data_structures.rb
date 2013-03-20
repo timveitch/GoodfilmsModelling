@@ -1,4 +1,5 @@
 require 'app/gf_data_catalogue'
+require 'app/ruby_extensions/array'
 
 def get_fields_from_header(file)
   fields = nil
@@ -41,5 +42,28 @@ user_fields += [:ratings]
 GfUser        = Struct.new(*user_fields) {
   def self.integer_fields
     return %w{user_id total_interactions total_enqueues total_ratings}.map(&:to_sym)
+  end
+
+  def reset_variables_derived_from_ratings
+    @mean_quality_rating = nil
+    @mean_rewatch_rating = nil
+  end
+
+  def mean_quality_rating
+    @mean_quality_rating ||= self.ratings.map { |rating| rating.quality_rating }.mean
+  end
+
+  def mean_rewatch_rating
+    @mean_rewatch_rating ||= self.ratings.map { |rating| rating.rewatchability_rating }.mean
+  end
+
+  def delete_ratings_if(&block)
+    self.ratings.delete_if(&block)
+    reset_variables_derived_from_ratings()
+  end
+
+  def ratings=(ratings)
+    self[:ratings] = ratings
+    reset_variables_derived_from_ratings()
   end
 }

@@ -48,4 +48,32 @@ class TcGfDataSet < Test::Unit::TestCase
     assert_equal(7, gf_data_set.ratings.size,             'ratings after cull')
     assert_equal(7, gf_data_set.users.first.ratings.size, 'user ratings after cull')
   end
+
+  def test_get_film_pairs
+    user1 = GfUser.new
+    user2 = GfUser.new
+
+    film1 = GfFilm.new; film1.film_id = 1
+    film2 = GfFilm.new; film2.film_id = 2
+    film3 = GfFilm.new; film3.film_id = 3
+
+    rating1 = GfRating.new; rating1.film = film1
+    rating2 = GfRating.new; rating2.film = film2
+    rating3 = GfRating.new; rating3.film = film3
+
+    user1.ratings = [rating1,rating2,rating3]
+    user2.ratings = [rating1,rating2]
+
+    gf_data_set = GfDataSet.new([film1,film2,film3],[],[rating1,rating2,rating3],[user1,user2])
+
+    pairs = gf_data_set.get_rating_pairs()
+    assert_equal(4, pairs.size, 'number of pairs')
+    assert_equal([2], pairs.map(&:size).uniq, 'all pairs')
+
+    {[rating1,rating2] => 2,
+     [rating2,rating3] => 1,
+     [rating1,rating3] => 1}.each { |test_pair, count|
+      assert_equal(count, pairs.select { |pair| pair == test_pair }.size, "number of times pair #{test_pair.inspect} appears")
+    }
+  end
 end
