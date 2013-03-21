@@ -5,7 +5,7 @@ time1 = Time.new
 
 gf_data_set = GfDataLoader.load_all
 
-top_n = 200
+top_n = 400
 
 gf_data_set.keep_only_n_top_rated_films(top_n)
 rating_pairs = gf_data_set.get_rating_pairs

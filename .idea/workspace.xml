@@ -4,7 +4,7 @@
     <list default="true" id="5e905333-1f66-4bb9-9736-61d203ec1937" name="Default" comment="" />
     <ignored path="GoodfilmsModelling.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363766410140" ignored="false" />
+    <file path="/Dummy.txt" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363824780111" ignored="false" />
     <file path="/gf_data_loader.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363693641452" ignored="false" />
     <file path="/tc_gf_data_loader.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363612085156" ignored="false" />
     <file path="/run_unit_tests.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363602298391" ignored="false" />
@@ -12,15 +12,15 @@
     <file path="/gf_data_structures.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363784844233" ignored="false" />
     <file path="/gf_data_catalogue.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363603862883" ignored="false" />
     <file path="/tc_gf_data_structures.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363782996054" ignored="false" />
-    <file path="/temp.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363772397933" ignored="false" />
+    <file path="/temp.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363826375400" ignored="false" />
     <file path="/gf_data_set.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363785158323" ignored="false" />
-    <file path="/a.dummy" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363647037188" ignored="false" />
+    <file path="/a.dummy" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363825308567" ignored="false" />
     <file path="D:/BDK/bedrock/app/utils/import/counts/zenith_counts_importer.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363649965667" ignored="false" />
     <file path="/zenith_counts_importer.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363649692231" ignored="false" />
     <file path="D:/BDK/bedrock/app/ghts/ghts_database_reader.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363681469203" ignored="false" />
     <file path="/ghts_database_reader.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363681442027" ignored="false" />
-    <file path="D:/BDK/bedrock/app/ghts/ghts_data_set.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363681594840" ignored="false" />
-    <file path="/ghts_data_set.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363681590756" ignored="false" />
+    <file path="D:/BDK/bedrock/app/ghts/ghts_data_set.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363831137321" ignored="false" />
+    <file path="/ghts_data_set.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363831048482" ignored="false" />
     <file path="D:/BDK/bedrock/spec/ghts/views/tc_ghts_database_reader.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363681668085" ignored="false" />
     <file path="/tc_ghts_database_reader.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363679760529" ignored="false" />
     <file path="D:/BDK/bedrock/app/ghts/ghts_constants.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363675084505" ignored="false" />
@@ -39,7 +39,7 @@
     <file path="/run_divisive_films_validator.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363693608978" ignored="false" />
     <file path="/covariance_calculator.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363769196522" ignored="false" />
     <file path="/covariance.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363783734269" ignored="false" />
-    <file path="D:/BDK/bedrock/app/zenith_model_run_rdoc.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363757181495" ignored="false" />
+    <file path="D:/BDK/bedrock/app/zenith_model_run_rdoc.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363827283525" ignored="false" />
     <file path="/zenith_model_run_rdoc.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363756329872" ignored="false" />
     <file path="D:/BDK/bedrock/app/ghts/import/Melbourne/vista07_to_ghts_importer.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363756930961" ignored="false" />
     <file path="/vista07_to_ghts_importer.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363756840149" ignored="false" />
@@ -49,6 +49,15 @@
     <file path="/New Job (3).rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363782769886" ignored="false" />
     <file path="/array.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363782071031" ignored="false" />
     <file path="/film_rating_covariance_calculator.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363783819078" ignored="false" />
+    <file path="D:/BDK/bedrock/lib/kirbybase-csv.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363827283525" ignored="false" />
+    <file path="D:/BDK/bedrock/app/ghts/import/SEQ/seqts_to_ghts_trip_leg_mapper.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363830376488" ignored="false" />
+    <file path="/seqts_to_ghts_trip_leg_mapper.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363830375679" ignored="false" />
+    <file path="D:/BDK/bedrock/app/ghts/import/Melbourne/vista_to_ghts_trip_leg_mapper.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363830361808" ignored="false" />
+    <file path="/vista_to_ghts_trip_leg_mapper.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363830361016" ignored="false" />
+    <file path="D:/BDK/bedrock/spec/ghts/import/Melbourne/tc_vista_to_ghts_trip_leg_mapper.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363830491652" ignored="false" />
+    <file path="/tc_vista_to_ghts_trip_leg_mapper.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363830163013" ignored="false" />
+    <file path="/tc_seqts_to_ghts_trip_leg_mapper.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363830465933" ignored="false" />
+    <file path="D:/BDK/bedrock/spec/ghts/import/SEQ/tc_seqts_to_ghts_trip_leg_mapper.rb" changelist="5e905333-1f66-4bb9-9736-61d203ec1937" time="1363830486341" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +140,7 @@
       <file leaf-file-name="run_covariance_calculations.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/similarity/run_covariance_calculations.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="0" selection-start="2200" selection-end="2200" vertical-scroll-proportion="0.6283186">
+            <state line="7" column="9" selection-start="153" selection-end="153" vertical-scroll-proportion="0.16857798">
               <folding />
             </state>
           </provider>
@@ -224,6 +233,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -344,19 +354,18 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.sourceCode.General" />
     <property name="recentsLimit" value="5" />
-    <property name="restartRequiresConfirmation" value="true" />
+    <property name="options.lastSelected" value="preferences.sourceCode.General" />
     <property name="last_opened_file_path" value="D:/BDK/bedrock" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager" selected="Ruby.run_covariance_calculations">
     <configuration default="false" name="tc_gf_data_loader" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
@@ -530,12 +539,12 @@
       <method />
     </configuration>
     <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Ruby.RunUnitTests" />
-      <item index="1" class="java.lang.String" itemvalue="Ruby.tc_gf_data_loader" />
-      <item index="2" class="java.lang.String" itemvalue="Ruby.tc_film_rating_covariance_calculator" />
-      <item index="3" class="java.lang.String" itemvalue="Ruby.tc_covariance" />
-      <item index="4" class="java.lang.String" itemvalue="Ruby.tc_divisive_films_validator" />
-      <item index="5" class="java.lang.String" itemvalue="Ruby.run_covariance_calculations" />
+      <item index="0" class="java.lang.String" itemvalue="Ruby.tc_gf_data_loader" />
+      <item index="1" class="java.lang.String" itemvalue="Ruby.tc_film_rating_covariance_calculator" />
+      <item index="2" class="java.lang.String" itemvalue="Ruby.tc_covariance" />
+      <item index="3" class="java.lang.String" itemvalue="Ruby.tc_divisive_films_validator" />
+      <item index="4" class="java.lang.String" itemvalue="Ruby.run_covariance_calculations" />
+      <item index="5" class="java.lang.String" itemvalue="Ruby.RunUnitTests" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -580,10 +589,9 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26710525" sideWeight="0.67060083" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27105263" sideWeight="0.67060083" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39914164" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -592,6 +600,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -760,7 +769,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/similarity/run_covariance_calculations.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="0" selection-start="2200" selection-end="2200" vertical-scroll-proportion="0.6283186">
+        <state line="7" column="9" selection-start="153" selection-end="153" vertical-scroll-proportion="0.16857798">
           <folding />
         </state>
       </provider>
