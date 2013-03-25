@@ -81,12 +81,10 @@ create_design_matrix <- function(m_film_names,n_pred_films=10,n_records='all'){
   X <- cbind(n_matrix, m_matrix)
   
   #---------------
-  # use this to predict quality:
-  
-  y <- merged_ratings$quality_rating
-  
-  #---------------
   # output a list:
-  out <- list(X = X, y_qual = merged_ratings$quality_rating, y_rewa = merged_ratings$rewatchability_rating)
+  out <- list(X = X, 
+              y_qual = merged_ratings$quality_rating, 
+              y_rewa = merged_ratings$rewatchability_rating,
+              user_id = merged_ratings$user_id)
   return(out)
 }
