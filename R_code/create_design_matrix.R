@@ -1,6 +1,6 @@
 ## create tim's design matrix: rating ~ dummy(f1...fn) + (r1...rm) + ... + 
 
-create_design_matrix <- function(m_film_names,n_pred_films=10){
+create_design_matrix <- function(m_film_names,n_pred_films=10,n_records='all'){
   load(paste(getwd(),'/r_data/ratings_summary.RData',sep=""))
   
   n_frame <- ratings_summary[1:n_pred_films,] # picks top rated films to predict.
@@ -37,10 +37,7 @@ create_design_matrix <- function(m_film_names,n_pred_films=10){
   # merged_ratings <- merge(n_ratings, m_ratings, by = 'user_id')
   
   # what are each user's divisive film ratings, if available? Must be a nicer way to do this...
-  users <- unique(n_ratings$user_id)
-  divisive_mat <- data.frame()
-  # for (i in 1:length(users)){
-  for (i in 1:1000){  
+  user_ratings <- function(i){
     r_vec <- rep(-1,length=length(m_films)*2)
     for (j in 1:length(m_films)){
       # pull out each user's divisive film ratings, stick into columns
@@ -50,8 +47,15 @@ create_design_matrix <- function(m_film_names,n_pred_films=10){
       if(any(m_ratings$user_id==users[i] & m_ratings$film_id==m_films_ind[j])) r_vec[j + length(m_films)] <- this_rewa
     }
     this_row <- c(users[i],r_vec)
-    divisive_mat <- rbind(divisive_mat,this_row)
+    return(this_row)
   }
+  
+  users <- unique(n_ratings$user_id)
+  
+  ifelse(n_records=='all',{n_use <- length(users)},{n_use <- n_records})
+  
+  divisive_mat <- sapply(1:n_use,user_ratings)
+  divisive_mat <- t(divisive_mat)
   
   # create some named labels for divisive_mat columns:
   name_vec <- '0'
