@@ -19,9 +19,9 @@ source('create_design_matrix.R')
 #--------------
 # Generate design matrix
 
-m_films <- c('Inception','Twilight','Fight Club','The Matrix','The Room') # names of the divisive films.
-n_pred_films <- 12
-out <- create_design_matrix(m_films,n_pred_films,n_records = 2000)
+m_films <- c('Inception','Twilight','Fight Club','The Matrix','Zoolander') # names of the divisive films.
+n_pred_films <- 48
+out <- create_design_matrix(m_films,n_pred_films,n_records = 1000)
 
 #---------------
 # use this to predict quality in random forest:
