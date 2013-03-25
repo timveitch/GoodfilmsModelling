@@ -49,32 +49,54 @@ n_ratings <- merge(n_frame,ratings_data,by = 'film_id')
 m_ratings <- merge(m_frame,ratings_data,by = 'film_id')
 
 # now merge these together for each user, including NAs:
-merged_ratings <- merge(n_ratings, m_ratings, by = 'user_id')
+# merged_ratings <- merge(n_ratings, m_ratings, by = 'user_id')
 
-# create design matrix of ~ dummy(f1... fn):
-n_matrix <- model.matrix(~ 0 + factor(pred_frame$film_id))
-
-#-------------
-# devisive film design matrix:
-# There is undoubtedly a nicer vectorised way to do this.
-m_array <- data.frame()
-for (i in 1:length(m_films)){
-  m_array <- rbind(m_array,ratings_summary[ratings_summary$film_id==m_films_ind[i],])
-  # not sure why these weren't working in vector form - only returning two matches??
+# what are each user's divisive film ratings, if available? Must be a nicer way to do this...
+users <- unique(n_ratings$user_id)
+divisive_mat <- data.frame()
+# for (i in 1:length(users)){
+for (i in 1:1000){  
+  r_vec <- rep(-1,length=length(m_films)*2)
+  for (j in 1:length(m_films)){
+    # pull out each user's divisive film ratings, stick into columns
+    this_qual <- m_ratings[m_ratings$user_id==users[i] & m_ratings$film_id==m_films_ind[j],'quality_rating']
+    this_rewa <- m_ratings[m_ratings$user_id==users[i] & m_ratings$film_id==m_films_ind[j],'rewatchability_rating']
+    if(any(m_ratings$user_id==users[i] & m_ratings$film_id==m_films_ind[j])) r_vec[j] <- this_qual
+    if(any(m_ratings$user_id==users[i] & m_ratings$film_id==m_films_ind[j])) r_vec[j + length(m_films)] <- this_rewa
+  }
+  this_row <- c(users[i],r_vec)
+  divisive_mat <- rbind(divisive_mat,this_row)
 }
 
-m_vals <- model.matrix(~ 0 + m_array$quality + m_array$rewatch)
-m_vals_rep <- rep(matrix(m_vals,nrow=1),times=nrow(n_matrix))
-m_vals_mat <- matrix(m_vals_rep,nrow=nrow(n_matrix),ncol=length(m_films)*2,byrow=TRUE)
 
-#---------------
-# add m devisive film ratings to dummy codes for n_films:
-X <- cbind(n_matrix,m_vals_mat)
+
+# create some named labels for divisive_mat columns:
+name_vec <- '0'
+for (i in 1:length(m_films)){
+  name_vec[i] <- paste('qual_',i,sep="")
+  name_vec[i + length(m_films)] <- paste('rewa_',i,sep="")
+}
+
+names(divisive_mat) <- c('user_id',name_vec)
+
+# stick these divisive film ratings back into n_matrix, based on user id:
+merged_ratings <- merge(n_ratings,divisive_mat,by = 'user_id')
+
+#-------------
+# create design matrix...
+
+# create design matrix of ~ dummy(f1... fn):
+n_matrix <- model.matrix(~ 0 + factor(merged_ratings$film_id))
+
+text_eval <- paste('m_matrix <- subset(merged_ratings, select = qual_1:rewa_',length(m_films),')',sep="")
+eval(parse(text=text_eval))
+
+X <- cbind(n_matrix, m_matrix)
 
 #---------------
 # use this to predict quality in random forest:
 
-y <- pred_frame$quality_rating
+y <- merged_ratings$quality_rating
 
 rf <- randomForest(x=X, y=y, ntree=500, mtry=(ncol(X) - 5))
 
