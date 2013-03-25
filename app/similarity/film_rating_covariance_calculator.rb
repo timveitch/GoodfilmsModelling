@@ -18,6 +18,7 @@ class FilmRatingCovarianceCalculator
   def self.get_within_user_quality_covariance(film_a_ratings, film_b_ratings)
     products = film_a_ratings.zip(film_b_ratings).map { |film_a_rating,film_b_rating|
       mean_user_rating = film_a_rating.user.mean_quality_rating
+      puts "#{film_a_rating.user.user_id} avgQ #{mean_user_rating}" if film_a_rating.user.user_id < 100
       (film_a_rating.quality_rating - mean_user_rating) *
       (film_b_rating.quality_rating - mean_user_rating)
     }
@@ -27,6 +28,7 @@ class FilmRatingCovarianceCalculator
   def self.get_within_user_rewatch_covariance(film_a_ratings, film_b_ratings)
     products = film_a_ratings.zip(film_b_ratings).map { |film_a_rating,film_b_rating|
       mean_user_rating = film_a_rating.user.mean_rewatch_rating
+      puts "#{film_a_rating.user.user_id} avgR #{mean_user_rating}" if film_a_rating.user.user_id < 100
       (film_a_rating.rewatchability_rating - mean_user_rating) *
       (film_b_rating.rewatchability_rating - mean_user_rating)
     }

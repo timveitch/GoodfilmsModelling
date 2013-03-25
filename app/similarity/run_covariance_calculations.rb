@@ -17,7 +17,7 @@ rating_pairs_by_film_pair = rating_pairs.group_by { |rating_a,rating_b|
 
 puts "have #{rating_pairs_by_film_pair.size} film pairs"
 
-File.open("D:/Goodfilms/sandpit/covariance_outputs_top_#{top_n}.csv", 'w') { |output_file|
+File.open("covariance_outputs_top_#{top_n}.csv", 'w') { |output_file|
   fields = %w{film_a film_b
               quality_covariance quality_covariance_z_score
               rewatch_covariance rewatch_covariance_z_score
