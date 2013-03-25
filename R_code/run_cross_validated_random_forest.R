@@ -20,7 +20,7 @@ ready.random.forest = configure.random.forest(300,50,5000,2,FALSE)
 for (target in targets) {
   y = my_data[seq(num_records),c(target)]  
   
-  predictions = cross.validate(x,y,ready.random.forest,random.forest.predict,2,123123)
+  predictions = cross.validate(x,y,ready.random.forest,random.forest.predict,num_folds = 2,123123)
   
   plot(y,predictions)
   

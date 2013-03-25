@@ -1,7 +1,7 @@
 library(doSNOW)
 library(snowfall) #for parallel processing
 
-cross.validate = function(x,y,ready_model,prediction_function,num_folds,seed) {
+cross.validate = function(x,y,ready_model,prediction_function,num_folds = 4,seed = 42) {
   cluster <- makeCluster(num_folds, type = "SOCK")
   registerDoSNOW(cluster)
   
