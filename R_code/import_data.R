@@ -9,7 +9,7 @@ library(plyr)
 # import ratings
 ratings_data <- read.csv(file=paste(getwd(),'/raw_data/ratings.csv',sep=""),header=TRUE)
 
-ratings_summary <- ddply(ratings_data,.(film_id),summarise,N=length(rewatchability_rating),quality=mean(quality_rating),rewatch=mean(rewatchability_rating))
+ratings_summary <- ddply(ratings_data,.(film_id),summarise,N=length(rewatchability_rating),av_quality=mean(quality_rating),av_rewatch=mean(rewatchability_rating))
 
 #-------
 # import films
@@ -20,7 +20,7 @@ temp <- subset(films_data,select=c('film_id','title'))
 ratings_summary <- merge(ratings_summary,temp,by='film_id')
 
 # order by most rated:
-ratings_summary <- ratings_summary[order(-ratings_summary$N, -ratings_summary$quality, -ratings_summary$rewatch),]
+ratings_summary <- ratings_summary[order(-ratings_summary$N, -ratings_summary$av_quality, -ratings_summary$av_rewatch),]
 
 #-------
 # import users

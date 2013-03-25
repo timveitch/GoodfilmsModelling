@@ -13,7 +13,7 @@ sub_dat <- ratings_summary[1:n_films,] # assumes that ratings_summary is ordered
 #-------------------
 # perform archetype analysis on top n rated films with k archetypes.
 
-dat <- subset(sub_dat,select=c('quality','rewatch'))
+dat <- subset(sub_dat,select=c('av_quality','av_rewatch'))
 dat <- as.matrix(dat)
 
 a <- archetypes(dat, k = 4)

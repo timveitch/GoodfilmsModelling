@@ -14,63 +14,21 @@ library(reshape2)
 library(ggplot2)
 library(plyr)
 
+source('create_design_matrix.R')
 
-load(paste(getwd(),'/r_data/ratings_summary.RData',sep=""))
+#--------------
+# Generate design matrix
 
-n_films <- 10
-pred_films <- ratings_summary[1:n_films,] # picks top rated films to predict.
-
-# # code to draw a random sample of n_films films from the top 1000 rated films:
-# pred_films <- ratings_summary[1:1000,] # assumes that ratings_summary is ordered by N.
-# sample n_films of the top rated films to predict:
-# set.seed(12345)
-# sample_ind <- sample(1:nrow(pred_films),size=n_films)
-# pred_films <- pred_films[sample_ind,]
-
-m_films <- c('Inception','Twilight','Fight Club','The Matrix','The Room') # names of the divisive films.
-
-# find film ids for these:
-m_films_ind <- 0
-for (i in 1:length(m_films)){
-  m_films_ind[i] <- ratings_summary$film_id[ratings_summary$title==m_films[i]]
-}
-
-# check that none of the m_films fall into the pred_films set; remove if they do.
-for (i in 1:length(m_films)){
-  pred_films <- pred_films[pred_films$film_id!=m_films_ind[i],]
-}
-
-#------------
-# prediction film design matrix: find individual person ratings for each film.
-
-pred_frame <- merge(pred_films,ratings_data,by = 'film_id')
-
-# create design matrix of ~ dummy(f1... fn):
-n_matrix <- model.matrix(~ 0 + factor(pred_frame$film_id))
-
-#-------------
-# devisive film design matrix:
-# There is undoubtedly a nicer vectorised way to do this.
-m_array <- data.frame()
-for (i in 1:length(m_films)){
-  m_array <- rbind(m_array,ratings_summary[ratings_summary$film_id==m_films_ind[i],])
-  # not sure why these weren't working in vector form - only returning two matches??
-}
-
-m_vals <- model.matrix(~ 0 + m_array$quality + m_array$rewatch)
-m_vals_rep <- rep(matrix(m_vals,nrow=1),times=nrow(n_matrix))
-m_vals_mat <- matrix(m_vals_rep,nrow=nrow(n_matrix),ncol=length(m_films)*2,byrow=TRUE)
-
-#---------------
-# add m devisive film ratings to dummy codes for n_films:
-X <- cbind(n_matrix,m_vals_mat)
+m_film_names <- c('Inception','Twilight','Fight Club','The Matrix','The Room') # names of the divisive films.
+n_pred_films <- 12
+out <- create_design_matrix(m_film_names,n_pred_films,n_records = 5000)
 
 #---------------
 # use this to predict quality in random forest:
+X <- out$X
+y <- out$y_qual
 
-y <- pred_frame$quality_rating
-
-rf <- randomForest(x=X, y=y, ntree=500, mtry=495)
+rf <- randomForest(x=X, y=y, ntree=300, mtry=(ncol(X) - 5))
 
 # predict y values:
 y_hat <- rf$predicted
