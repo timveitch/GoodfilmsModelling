@@ -56,7 +56,7 @@ create_design_matrix <- function(m_film_names,n_pred_films=10,n_records='all'){
   
   divisive_mat <- sapply(1:n_use,user_ratings)
   divisive_mat <- t(divisive_mat)
-  
+  divisive_mat <- as.data.frame(divisive_mat)
   # create some named labels for divisive_mat columns:
   name_vec <- '0'
   for (i in 1:length(m_films)){

@@ -19,16 +19,16 @@ source('create_design_matrix.R')
 #--------------
 # Generate design matrix
 
-m_film_names <- c('Inception','Twilight','Fight Club','The Matrix','The Room') # names of the divisive films.
+m_films <- c('Inception','Twilight','Fight Club','The Matrix','The Room') # names of the divisive films.
 n_pred_films <- 12
-out <- create_design_matrix(m_film_names,n_pred_films,n_records = 5000)
+out <- create_design_matrix(m_films,n_pred_films,n_records = 2000)
 
 #---------------
 # use this to predict quality in random forest:
 X <- out$X
 y <- out$y_qual
 
-rf <- randomForest(x=X, y=y, ntree=300, mtry=(ncol(X) - 5))
+rf <- randomForest(x=X, y=y, ntree=500, mtry=(ncol(X) - 5))
 
 # predict y values:
 y_hat <- rf$predicted
