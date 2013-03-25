@@ -2,7 +2,7 @@
 #
 # TSAW & TRV
 
-# Random Forests predicting rating from dummy coded new films (n) and rating to m exemplar films:
+# Random Forests predicting rating from dummy coded new films (n) and rating to m divisive films:
 
 # rating ~ dummy(f1...fn) + (r1...rm) + ... + 
 # each row of this data is a single person's rating for a single film.
@@ -12,6 +12,7 @@ rm(list=ls())
 library(randomForest)
 library(reshape2)
 library(ggplot2)
+library(plyr)
 
 
 load(paste(getwd(),'/r_data/ratings_summary.RData',sep=""))
@@ -42,37 +43,32 @@ for (i in 1:length(m_films)){
 #------------
 # prediction film design matrix: find individual person ratings for each film.
 
+pred_frame <- merge(pred_films,ratings_data,by = 'film_id')
 
-
+# create design matrix of ~ dummy(f1... fn):
+n_matrix <- model.matrix(~ 0 + factor(pred_frame$film_id))
 
 #-------------
 # devisive film design matrix:
 # There is undoubtedly a nicer vectorised way to do this.
-m_films_ind <- 0
 m_array <- data.frame()
 for (i in 1:length(m_films)){
-  m_films_ind[i] <- ratings_summary$film_id[ratings_summary$title==m_films[i]]
-  m_array <- rbind(m_array,pred_films[pred_films$film_id==m_films_ind[i],])
+  m_array <- rbind(m_array,ratings_summary[ratings_summary$film_id==m_films_ind[i],])
   # not sure why these weren't working in vector form - only returning two matches??
 }
 
 m_vals <- model.matrix(~ 0 + m_array$quality + m_array$rewatch)
-m_vals_rep <- rep(matrix(m_vals,nrow=1),times=nrow(n_array))
-m_vals_mat <- matrix(m_vals_rep,nrow=nrow(n_array),ncol=length(m_films)*2,byrow=TRUE)
-
+m_vals_rep <- rep(matrix(m_vals,nrow=1),times=nrow(n_matrix))
+m_vals_mat <- matrix(m_vals_rep,nrow=nrow(n_matrix),ncol=length(m_films)*2,byrow=TRUE)
 
 #---------------
-# create design matrix to specification: ~ dummy(f1...fn) + (r1...rm) + ... + 
-
-X <- model.matrix(~ 0 + factor(n_array$film_id))
-
 # add m devisive film ratings to dummy codes for n_films:
-X <- cbind(X,m_vals_mat)
+X <- cbind(n_matrix,m_vals_mat)
 
 #---------------
 # use this to predict quality in random forest:
 
-y <- n_array$quality
+y <- pred_frame$quality_rating
 
 rf <- randomForest(x=X, y=y, ntree=500, mtry=495)
 
