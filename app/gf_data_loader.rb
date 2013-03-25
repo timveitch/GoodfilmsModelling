@@ -1,6 +1,6 @@
-require 'app/gf_data_structures'
-require 'app/gf_data_catalogue'
-require 'app/gf_data_set'
+require File.dirname(__FILE__) + '/gf_data_structures'
+require File.dirname(__FILE__) + '/gf_data_catalogue'
+require File.dirname(__FILE__) + '/gf_data_set'
 
 class GfDataLoader
   def self.load_all

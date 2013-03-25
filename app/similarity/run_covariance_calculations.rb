@@ -1,11 +1,11 @@
-require 'app/gf_data_loader'
-require 'app/similarity/film_rating_covariance_calculator'
+require File.dirname(__FILE__) + '/../gf_data_loader'
+require File.dirname(__FILE__) + '/../similarity/film_rating_covariance_calculator'
 
 time1 = Time.new
 
 gf_data_set = GfDataLoader.load_all
 
-top_n = 400
+top_n = 200
 
 gf_data_set.keep_only_n_top_rated_films(top_n)
 rating_pairs = gf_data_set.get_rating_pairs

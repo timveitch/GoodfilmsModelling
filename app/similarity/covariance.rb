@@ -1,4 +1,4 @@
-require 'app/ruby_extensions/array'
+require File.dirname(__FILE__) + '/../ruby_extensions/array'
 
 class Covariance
 

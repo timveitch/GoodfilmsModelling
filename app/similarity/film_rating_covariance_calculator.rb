@@ -1,4 +1,4 @@
-require 'app/similarity/covariance'
+require File.dirname(__FILE__) + '/covariance'
 
 class FilmRatingCovarianceCalculator
   def self.get_quality_covariance(film_a_ratings, film_b_ratings)

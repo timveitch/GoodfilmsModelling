@@ -1,5 +1,5 @@
-require 'app/gf_data_catalogue'
-require 'app/ruby_extensions/array'
+require File.dirname(__FILE__) + '/gf_data_catalogue'
+require File.dirname(__FILE__) + '/ruby_extensions/array'
 
 def get_fields_from_header(file)
   fields = nil
