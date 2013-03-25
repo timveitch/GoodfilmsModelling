@@ -28,10 +28,17 @@ out <- create_design_matrix(m_films,n_pred_films,n_records = 1000)
 X <- out$X
 y <- out$y_qual
 
-rf <- randomForest(x=X, y=y, ntree=500, mtry=(ncol(X) - 5))
+rf <- randomForest(x=X, y=y, ntree=100, mtry=(ceiling(ncol(X)/3)), sampsize = ceiling(nrow(X)/3), nodesize = 2)
 
 # predict y values:
 y_hat <- rf$predicted
 
 # plot y against predicted:
-qplot(y,y_hat) + scale_x_continuous(limits=c(0,100)) + scale_y_continuous(limits=c(0,100))
+qplot(y,y_hat,alpha=.3) + scale_x_continuous(limits=c(0,100)) + scale_y_continuous(limits=c(0,100))
+
+#----------------
+# are we doing better than the mean? 
+
+# calculate random forest mse:
+print(mean((y - y_hat)^2))
+
