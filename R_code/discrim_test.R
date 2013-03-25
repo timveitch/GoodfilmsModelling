@@ -18,32 +18,38 @@ library(plyr)
 load(paste(getwd(),'/r_data/ratings_summary.RData',sep=""))
 
 n_films <- 10
-pred_films <- ratings_summary[1:n_films,] # picks top rated films to predict.
+n_frame <- ratings_summary[1:n_films,] # picks top rated films to predict.
 
 # # code to draw a random sample of n_films films from the top 1000 rated films:
-# pred_films <- ratings_summary[1:1000,] # assumes that ratings_summary is ordered by N.
+# n_frame <- ratings_summary[1:1000,] # assumes that ratings_summary is ordered by N.
 # sample n_films of the top rated films to predict:
 # set.seed(12345)
-# sample_ind <- sample(1:nrow(pred_films),size=n_films)
-# pred_films <- pred_films[sample_ind,]
+# sample_ind <- sample(1:nrow(n_frame),size=n_films)
+# n_frame <- n_frame[sample_ind,]
 
 m_films <- c('Inception','Twilight','Fight Club','The Matrix','The Room') # names of the divisive films.
 
 # find film ids for these:
 m_films_ind <- 0
+m_frame <- data.frame()
 for (i in 1:length(m_films)){
   m_films_ind[i] <- ratings_summary$film_id[ratings_summary$title==m_films[i]]
+  m_frame <- rbind(m_frame,ratings_summary[ratings_summary$title==m_films[i],])
 }
 
-# check that none of the m_films fall into the pred_films set; remove if they do.
+# check that none of the m_films fall into the n_frame set; remove if they do.
 for (i in 1:length(m_films)){
-  pred_films <- pred_films[pred_films$film_id!=m_films_ind[i],]
+  n_frame <- n_frame[n_frame$film_id!=m_films_ind[i],]
 }
 
 #------------
-# prediction film design matrix: find individual person ratings for each film.
+# merge ratings data in for n_ and m_ frames so that we now have individual ratings for each person.
 
-pred_frame <- merge(pred_films,ratings_data,by = 'film_id')
+n_ratings <- merge(n_frame,ratings_data,by = 'film_id')
+m_ratings <- merge(m_frame,ratings_data,by = 'film_id')
+
+# now merge these together for each user, including NAs:
+merged_ratings <- merge(n_ratings, m_ratings, by = 'user_id')
 
 # create design matrix of ~ dummy(f1... fn):
 n_matrix <- model.matrix(~ 0 + factor(pred_frame$film_id))
@@ -70,7 +76,7 @@ X <- cbind(n_matrix,m_vals_mat)
 
 y <- pred_frame$quality_rating
 
-rf <- randomForest(x=X, y=y, ntree=500, mtry=495)
+rf <- randomForest(x=X, y=y, ntree=500, mtry=(ncol(X) - 5))
 
 # predict y values:
 y_hat <- rf$predicted
